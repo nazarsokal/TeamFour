@@ -1,12 +1,15 @@
 import "./App.css";
 import Header from "./components/Header";
 import Body from "./components/Body";
+import NazarNovosilets from "./components/NazarNovosilets";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Body />
+      <div className="body-container">
+      <NazarNovosilets />
+    </div>
     </div>
   );
 }
