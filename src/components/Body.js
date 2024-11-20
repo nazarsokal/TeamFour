@@ -1,13 +1,13 @@
 import React from "react";
 
-const Body = () => {
+const Body = ({ name = "John Doe", position = "Software Engineer", photoSrc = "/avatar-default.png" }) => {
   return (
     <main style={styles.body}>
       <div style={styles.card}>
-        <img src={"/avatar-default.png"} alt="John Doe" style={styles.photo} />
+        <img src={photoSrc} alt={name} style={styles.photo} />
         <div style={styles.textContainer}>
-          <h2 style={styles.name}>John Doe</h2>
-          <p style={styles.position}>Software engineer</p>
+          <h2 style={styles.name}>{name}</h2>
+          <p style={styles.position}>{position}</p>
         </div>
       </div>
     </main>
@@ -20,10 +20,11 @@ const styles = {
     flexWrap: "wrap",
   },
   card: {
-    width: "150px",
+    width: "175px",
+    height: "200px",
     padding: "1em",
     borderRadius: "10px",
-    backgroundColor: "#fff",
+    backgroundColor: "#f5f5f5",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     textAlign: "center",
     margin: "1em",
@@ -32,8 +33,8 @@ const styles = {
     alignItems: "center",
   },
   photo: {
-    width: "100px",
-    height: "100px",
+    width: "130px",
+    height: "130px",
     borderRadius: "50%",
     objectFit: "cover",
   },
@@ -48,7 +49,7 @@ const styles = {
   },
   position: {
     fontSize: "0.9em",
-    color: "#6a0dad", // Same purple color as header
+    color: "#6a0dad",
     margin: "0.5em 0 0 0",
   },
 };

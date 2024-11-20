@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Body />
+      <div className="body-container" >
       <NazarSok />
+      </div>
     </div>
   );
 }
