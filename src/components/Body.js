@@ -1,13 +1,13 @@
 import React from "react";
 
-const Body = () => {
+const Body = ({ name = "John Doe", position = "Software Engineer", photoSrc = "/avatar-default.png" }) => {
   return (
     <main style={styles.body}>
       <div style={styles.card}>
-        <img src={"/avatar-default.png"} alt="John Doe" style={styles.photo} />
+        <img src={photoSrc} alt={name} style={styles.photo} />
         <div style={styles.textContainer}>
-          <h2 style={styles.name}>John Doe</h2>
-          <p style={styles.position}>Software engineer</p>
+          <h2 style={styles.name}>{name}</h2>
+          <p style={styles.position}>{position}</p>
         </div>
       </div>
     </main>
