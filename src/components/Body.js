@@ -20,10 +20,11 @@ const styles = {
     flexWrap: "wrap",
   },
   card: {
-    width: "150px",
+    width: "175px",
+    height: "200px",
     padding: "1em",
     borderRadius: "10px",
-    backgroundColor: "#fff",
+    backgroundColor: "#f5f5f5",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     textAlign: "center",
     margin: "1em",
@@ -32,8 +33,8 @@ const styles = {
     alignItems: "center",
   },
   photo: {
-    width: "100px",
-    height: "100px",
+    width: "130px",
+    height: "130px",
     borderRadius: "50%",
     objectFit: "cover",
   },
@@ -48,7 +49,7 @@ const styles = {
   },
   position: {
     fontSize: "0.9em",
-    color: "#6a0dad", // Same purple color as header
+    color: "#6a0dad",
     margin: "0.5em 0 0 0",
   },
 };
