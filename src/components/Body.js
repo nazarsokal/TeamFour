@@ -24,7 +24,7 @@ const styles = {
     height: "200px",
     padding: "1em",
     borderRadius: "10px",
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "yellow",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     textAlign: "center",
     margin: "1em",
