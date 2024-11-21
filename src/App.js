@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Body from "./components/Body";
+import OlehSlyvkanych from "./components/OlehSlyvkanych";
 import OleksanrSmyk from "./components/OleksandrSmyk";
 import NazarNovosilets from "./components/NazarNovosilets";
 import NazarSok from "./components/NazarSok";
@@ -15,6 +16,7 @@ function App() {
         <NazarSok />
         <KseniiaOlefir />
         <OleksanrSmyk />
+        <OlehSlyvkanych />
       </div>
     </div>
   );
